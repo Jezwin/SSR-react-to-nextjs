@@ -1,0 +1,534 @@
+//overall
+@import '../../font-size/font-size.scss';
+
+.selected.auki-services-indicatorList, .auki-aem-scope-expertise {
+  color:#4f43fd;
+}
+
+.auki-services-tab {
+  display:flex;
+  justify-content: center;
+  height: calc(450vw/13.66);
+  max-height: 550px;
+  min-height: 450px;
+  position: relative;
+  max-width: 1920px; // remove
+  overflow: hidden;
+}
+
+.service-hire,.service-full{
+  display: flex;
+  font-family: "AvenirNextLTCom-Regular";
+  width: 49%;
+}
+
+.service-full,.service-caseStudy,.service-hire{
+  max-width: 972px;
+}
+
+
+@keyframes fadeInRight {
+  from {
+      opacity:0;
+      -webkit-transform: translatex(100px);
+      -moz-transform: translatex(100px);
+      -o-transform: translatex(100px);
+      transform: translatex(100px);
+  }
+  to {
+      opacity:1;
+      -webkit-transform: translatex(0);
+      -moz-transform: translatex(0);
+      -o-transform: translatex(0);
+      transform: translatex(0);
+  }
+}
+.in-right {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -o-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -o-animation-duration:.5s;
+  animation-delay: .5s;
+}
+
+//indicators
+.auki-services-indicator {
+  display:flex;
+  padding: 30px 0;
+  justify-content: center;
+  font-family: "AvenirNextLTCom-Demi";
+}
+
+.auki-services-indicatorList {
+  list-style-type: none;
+  color:#666666;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0 25px;
+}
+
+//logo
+
+.auki-services-title {
+  font-size: 4vw;
+  font-family: "AvenirNextLTCom-Demi";
+  line-height: 1;
+}
+
+.auki-aem-logo {
+  max-width: 518px;
+  font-family: "AvenirNextLTCom-Regular";
+}
+
+.auki-logo-subtitle {
+  color: #ca581c;
+  font-family: "poppins-regular";
+  padding-bottom: 5px;
+}
+
+.auki-aem-logo-container {
+  padding: 55px 30px 55px 5px;
+}
+
+.open.auki-aem-logo {
+  background: linear-gradient(90deg, #ffffff 71%,  #f2f2f2 71%,  #f2f2f2 86%, #000000 86%);
+}
+ 
+.open.auki-aem-logo-title {
+  animation: scaleTo 1s ease forwards;
+  position: relative;
+}
+
+@keyframes scaleTo {
+  100% {
+    transform: scale(0.6);
+  }
+  from { top: 10px;}
+  to { top: -75px;}
+}
+
+.open-display-none {
+  display: none !important;
+}
+
+
+//scope
+
+.auki-scope {
+  max-width: 715px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+
+  &-container {
+    margin: auto;
+    max-width: 500px;
+  }
+
+  &-desc{
+    padding-bottom: 50px;
+  }
+
+  &-expertise{
+    color: #5044fc
+  }
+
+  &-products {
+    color: #666666;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 255px;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+}
+
+
+
+//full-tech
+
+
+.service-full{
+  background:  linear-gradient(90deg, rgba(255,255,255,1) 94%, rgba(0,0,0,1) 94%);
+}
+
+.service-full-desc {
+  padding: 70px 100px 70px 85px;
+  max-width: 650px;
+}
+
+//hire
+
+.service-hire-tab {
+  width: 50%;
+  display: flex;
+}
+
+.service-hire-desc {
+  padding: 20% 40px 20% 40px;
+  max-width: 486px;
+}
+
+.odd.service-hire-tab {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.even.service-hire-tab {
+  background-color: #000;
+  color: #ffffff;
+
+}
+
+//case-study
+
+.auki-service-arrow {
+  width: 7.5%;
+  position: relative;
+}
+
+.service-arrow {
+    font-size: 22px;
+    background-color: rgb(130, 125, 122);
+    border-radius: 50%;
+    padding: 13px 20px;
+    width: 15px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+//menu
+
+.auki-menu-first {
+  color:#4f43fd;
+  margin: 0 -15px;
+}
+
+.auki-menu-container {
+  background-color: white;
+  color:black;
+  max-width: 410px;
+}
+
+.scope.auki-menu-container {
+  background-color: black;
+  color: white;
+  max-width: 405px;
+}
+
+.auki-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px 0 35px;
+  font-family: "AvenirNextLTCom-Regular";
+  max-width: 160px;
+  margin: auto;
+  height: 100%;
+}
+
+.auki-menu-list {
+  cursor: pointer;
+  padding: 15px 0;
+
+}
+
+.auki-menu-list:not(.auki-menu-first)::before{
+  content:'\21C0';
+  margin-left: -20px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.selected.auki-menu-list::before {
+  content: '\21BC';
+}
+
+@media (min-width: 1920px) {
+  .auki-scope,.service-hire-para,.service-full-para,.auki-menu-list {
+    font-size: $highDesk16;
+  }
+
+  .auki-services-title {
+    font-size: 78.5px;
+  }
+
+  .service-hire-heading,.service-full-heading {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .auki-services-indicatorList {
+    font-size: $desk30;
+  }
+  .auki-scope {
+    width: calc(509vw / 13.66);
+    &-container {
+        width: calc(355vw/13.66);
+    }
+    
+    &-products {
+      width: calc(180vw / 13.66);
+    }
+  }
+
+    //logo
+  .open.auki-aem-logo {
+    width: calc(285vw / 13.66);
+  }
+  .auki-aem-logo {
+    width: calc(371vw / 13.66);
+  }
+  .scope.auki-menu-container{
+    width: calc(288vw / 13.66);
+  }
+  //case study
+  .service-caseStudy,.service-full,.service-hire {
+    width: calc(692vw /13.66);
+  }
+
+  //hire
+  .service-hire-desc {
+    width: calc(300vw/13.66);
+  }
+
+      //menu
+  .auki-menu-container {
+    width: calc(393vw /13.66)
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+
+  .auki-scope,.service-hire-para,.service-full-para,.auki-menu-list  {
+    font-size: $desk16;
+  }
+
+  .service-hire-heading,.service-full-heading {
+    font-size: (20vw / 13.66);
+  }
+}
+
+@media (min-width:768px) and (max-width: 1365px) {
+  .auki-services-indicatorList {
+    font-size: $lowDesk30;
+  }
+
+  //scope
+  .auki-scope {
+    width: calc(500vw/13.64);
+    min-width: 400px;
+    font-size: $lowDesk16;
+    &-container {
+      max-width: 330px;
+    }
+    
+    &-products {
+     max-width: 185px;
+    }
+  }
+  //logo
+  .open.auki-aem-logo {
+        width: calc(284vw/13.64);
+        .auki-aem-logo-container{
+          padding: 54px 30px 55px 5px;
+        }
+  }
+  .auki-aem-logo {
+    width: calc(370vw/13.64);
+    min-width: 185px;
+  }
+  .auki-aem-logo-container{
+    padding: 55px 30px 55px 25px;
+  }
+
+  //case study
+  .service-caseStudy,.service-full,.service-hire {
+    width: calc(691vw /13.64);
+  }
+
+  // //menu
+  .auki-menu-container {
+    width: calc(388vw /13.64);
+  }
+
+  .scope.auki-menu-container{
+    width: calc(285vw /13.64);
+    min-width: 205px;
+  }
+  .auki-menu-list {
+    font-size: $lowDesk16;
+  }
+
+  //hire
+  .service-hire-heading,.service-full-heading {
+    font-size: 18px;
+  }
+
+  .service-hire-para,.service-full-para {
+    font-size: $lowDesk16;
+  }
+}
+
+@media (max-width: 1225px) {
+
+
+  //hire
+  .service-hire{
+    background:  linear-gradient(90deg, rgba(255,255,255,1) 93%, rgba(0,0,0,1) 93%);
+    flex-direction: column;
+    // width: 85%;
+    align-items: center;
+  }
+  .service-hire-desc {
+    padding: 20% 40px 20% 40px;
+    max-width: 500px;
+  }
+
+
+  .odd.service-hire-tab,.even.service-hire-tab {
+    background-color: transparent;
+    color: black;
+    width: 85%;
+  }
+
+  .service-hire-desc {
+    padding: 20px 40px 20px 40px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .auki-services-indicatorList {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+
+  .auki-service-arrow {
+    width: 0;
+  }
+
+  .service-arrow  {
+    position: absolute;
+    top: 385px;
+  }
+
+  .service-arrow.right{
+    left:-55px;
+  }
+
+  .service-arrow.left{
+    left: 60px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .auki-services-indicator{
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .auki-scope {
+    display: none;
+    max-width: 100%;
+  }
+
+  .auki-services-indicatorList {
+    span {
+      display: none;
+    }
+  }
+
+  .auki-services-tab {
+    min-height: 0;
+  }
+
+  .auki-services-indicatorList {
+    position: relative;
+    font-size: $mob30;
+    padding: 10px 15px;
+    color: black;
+  }
+
+  .auki-services-indicatorList::after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    font-family: none;
+    font-size: $mob30;
+  }
+
+  .auki-services-indicatorList.selected::after {
+    content: '-';
+    top: 8px;
+    right: 12px;
+    font-size: 34px;
+    font-family: none;
+  }
+
+  .auki-scope {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+
+    &-container {
+      max-width: 410px;
+      font-family: "AvenirNextLTCom-Regular";
+      font-size: $mob16;
+    }
+
+    &-logo {
+      transform: scale(.8);
+    }
+    &-desc {
+      padding-bottom: 30px;
+    }
+
+    &-hire {
+      padding: 30px 0;
+    }
+
+    &-hireBtnContainer {
+      display: flex;
+      justify-content: space-between;
+      max-width: 330px;
+      padding: 20px 0;
+    }
+
+    &-hireBtn {
+      border: none;
+      background-color: #5044fc;
+      color: #ffffff;
+      border-radius: 25px;
+      padding: 10px 35px;
+      font-size: 13px;
+    }
+
+    &-expertiseContainer {
+      padding-top: 15px;
+    }
+
+    &-econtainer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+}

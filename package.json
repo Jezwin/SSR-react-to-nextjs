@@ -8,8 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "jquery": "^3.5.0",
     "next": "9.3.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-responsive": "^8.0.3",
+    "react-router-dom": "^5.1.2",
+    "react-typist": "^2.0.5",
+    "react-typist-loop": "0.0.5",
+    "sass": "^1.26.3"
   }
 }
